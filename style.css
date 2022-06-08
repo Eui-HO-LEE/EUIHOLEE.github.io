@@ -1,0 +1,68 @@
+* {
+    padding:0; 
+    margin: 0;
+}
+
+body{
+    padding-top: 80px; padding-bottom: 80px;
+    
+}
+
+.container{
+    padding-right: 15px; padding-left: 15px;
+    margin-right: auto; margin-left: auto;
+    margin: 0 auto; 
+    max-width: 1024px; 
+    width: 100%;
+}
+
+.box {
+    margin-top: 15px; 
+    position: fixed; 
+    top: 0; right: 0; left: 0; 
+    z-index: 1000; 
+}
+
+.name{
+    padding-right: 10px; 
+    font-size: 24px; 
+    font-weight: 600;}
+
+ul {
+    float: right; 
+    list-style-type: none; 
+    overflow: hidden;}
+
+li {
+    float: left; 
+    margin-right: 10px;
+}
+
+li a {
+    color: gray; 
+    text-decoration: none;
+}
+
+
+img {
+    margin-right: 15px;
+}
+
+.row{
+    display: flex;
+}
+
+#page_home{
+
+    background-color: rgb(67, 198, 218);
+
+}
+
+
+#page_skills {
+    background-color: rgb(217, 250, 215);
+}
+
+#page_hobby{
+    background-color: rgb(147, 115, 214);
+}

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			.maintext{
+				float: right;
+			}
+
+		</style>
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+		<script>
+			$(document).ready(function () {
+			
+				
+			$('#menu_about').click(function () {
+			$('#page_home').hide('fast');
+			$('#page_hobby').hide('fast');
+			$('#page_skills').show('fast');
+		});
+
+		});
+
+		$(document).ready(function () {
+
+			$('#menu_home').click(function () {
+			$('#page_skills').hide('fast');
+			$('#page_hobby').hide('fast');
+			$('#page_home').show('fast');
+		});
+
+		});
+
+		$(document).ready(function () {
+
+		
+			$('#menu_hobby').click(function () {
+			$('#page_home').hide('slow');
+			$('#page_skills').hide('fast');
+			$('#page_hobby').show('slow');
+		});
+
+		});
+
+		</script>
+		
+
+	</head>
+	
+	<body>
+		<div class="box">
+			<div class="container">
+				<a class="name">LEE EUIHO</a>
+				
+				<div class="maintext">
+					<ul>
+						<li><a id="menu_home" href="#home">HOME</a></li>
+						<li><a id="menu_about" href="#skills">SKILLS</a></li>
+						<li><a id="menu_hobby" href="#hobby">HOBBY</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div id="page_home">
+					<div class="row">
+						<div>
+							<img src='Euiho.png' width="200">
+						</div>
+						<div>
+							<h1>자기소개</h1>
+							<br>
+                            <p>안녕하세요! 저는  <A href="#">컴퓨터공학과에</A> 다니고 있는 19학번 이의호입니다.</p>
+						</div>
+					</div>
+			</div>
+			<div id="page_skills" style="display: none;">
+				<h1>SKILLS</h1>
+				<div class="row">
+                <div>
+                    <img src='https://velog.velcdn.com/images/kim-jaemin420/post/235e8739-0f2a-48fe-8690-a51c6065fa45/c%E1%84%8B%E1%85%A5%E1%86%AB%E1%84%8B%E1%85%A5%20%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.png' width="500">
+                </div>
+                
+                <p>
+                    <br>
+					저는 C언어,자바등을 배웠었고 현재는 웹프로그래밍,C++,자료구조 등을 배우고 있습니다.
+				</p>
+                </div>
+            
+            </div>
+			<div id="page_hobby" style="display: none;">
+				<h1>HOBBY</h1>
+				<div class="row">
+
+                    <div>
+                        <img src='https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MDJfMTA3%2FMDAxNjI1MjA5MTM3OTg4.__mI1E_PEz29TffbEzTrZlSnHrghnRxfsGCT1TQtp7Eg.WAAj3fo5XRwO4sCsxqU0y9kkB_qDljpilhDTI8VBTqsg.JPEG.pantheon_jm%2F%25B8%25AE%25B1%25D7%25BF%25C0%25BA%25EA%25B7%25B9%25C0%25FC%25B5%25E5.jpg&type=sc960_832' width="500">
+                    </div>
+                <p>
+					<br>
+                    <A href="https://www.leagueoflegends.com/ko-kr/">리그 오브 레전드</A>, 철권7 등의 온라인 게임들을 즐겨하고 있습니다.
+				</p>
+			</div>
+            </div>
+        </div>
+	</body>
+		
+	</html>
